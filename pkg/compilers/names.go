@@ -23,6 +23,8 @@ const (
 	OSV_JAVA_VIRTUALBOX = "osv-java-virtualbox"
 	OSV_JAVA_VMAWRE     = "osv-java-vmware"
 
+	OSV_NODEJS_VIRTUALBOX = "osv-nodejs-virtualbox"
+
 	INCLUDEOS_CPP_QEMU       = "includeos-cpp-qemu"
 	INCLUDEOS_CPP_XEN        = "includeos-cpp-xen"
 	INCLUDEOS_CPP_VIRTUALBOX = "includeos-cpp-virtualbox"

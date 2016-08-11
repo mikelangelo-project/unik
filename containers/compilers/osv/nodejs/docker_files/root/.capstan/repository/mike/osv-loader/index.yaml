@@ -1,0 +1,5 @@
+format_version: "1"
+version: "v0.24-116-g73b38d8"
+created: "2016-06-11T15:41:07"
+description: "OSv Bootloader"
+build: "scripts/build"

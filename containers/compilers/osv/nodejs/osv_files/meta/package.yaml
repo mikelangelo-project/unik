@@ -1,0 +1,5 @@
+name: osv.nodejs.unik
+title: NodeJS integration into OSv for Unik
+author: contributor
+require:
+- eu.mikelangelo-project.app.node-4.4.5

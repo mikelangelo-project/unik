@@ -249,6 +249,12 @@ func NewUnikDaemon(config config.DaemonConfig) (*UnikDaemon, error) {
 		},
 	}
 
+	_compilers[compilers.OSV_NODEJS_VIRTUALBOX] = &osv.OsvVirtualboxCompiler{
+		OSvCompilerBase: osv.OSvCompilerBase{
+			CreateImage: osv.CreateImageNodeJS,
+		},
+	}
+
 	d := &UnikDaemon{
 		server:    lxmartini.QuietMartini(),
 		providers: _providers,
