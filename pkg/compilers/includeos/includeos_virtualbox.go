@@ -52,3 +52,11 @@ func (i *IncludeosVirtualboxCompiler) findFirstImageFile(directory string) (stri
 	}
 	return "", errors.New("no image file found", goerrors.New("end of dir"))
 }
+
+func (r *IncludeosVirtualboxCompiler) Usage() string {
+	return "TODO: usage for IncludeosVirtualboxCompiler"
+}
+
+func (r *IncludeosVirtualboxCompiler) Bootstrap(projectPath string) error {
+	return errors.New("not implemented", nil)
+}

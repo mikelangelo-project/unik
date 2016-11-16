@@ -56,6 +56,14 @@ func (r *RumpGoCompiler) CompileRawImage(params types.CompileImageParams) (*type
 	return img, nil
 }
 
+func (r *RumpGoCompiler) Usage() string {
+	return "TODO: usage for RumpGoCompiler"
+}
+
+func (r *RumpGoCompiler) Bootstrap(projectPath string) error {
+	return errors.New("not implemented", nil)
+}
+
 type godeps struct {
 	ImportPath   string   `json:"ImportPath"`
 	GoVersion    string   `json:"GoVersion"`

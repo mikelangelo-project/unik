@@ -44,6 +44,14 @@ func (r *RumpCCompiler) CompileRawImage(params types.CompileImageParams) (*types
 	return r.CreateImage(resultFile, params.Args, params.MntPoints, nil, params.NoCleanup)
 }
 
+func (r *RumpCCompiler) Usage() string {
+	return "TODO: usage for RumpCCompiler"
+}
+
+func (r *RumpCCompiler) Bootstrap(projectPath string) error {
+	return errors.New("not implemented", nil)
+}
+
 func NewRumpCCompiler(dockerImage string, createImage func(kernel, args string, mntPoints, bakedEnv []string, noCleanup bool) (*types.RawImage, error)) *RumpCCompiler {
 	return &RumpCCompiler{
 		RumCompilerBase: RumCompilerBase{

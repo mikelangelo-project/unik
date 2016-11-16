@@ -50,3 +50,11 @@ func (i *IncludeosQemuCompiler) findFirstImageFile(directory string) (string, er
 	}
 	return "", errors.New("no image file found", goerrors.New("end of dir"))
 }
+
+func (r *IncludeosQemuCompiler) Usage() string {
+	return "TODO: usage for IncludeosQemuCompiler"
+}
+
+func (r *IncludeosQemuCompiler) Bootstrap(projectPath string) error {
+	return errors.New("not implemented", nil)
+}

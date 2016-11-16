@@ -215,6 +215,14 @@ func (c *MirageCompiler) packageUnikernel(sourcesDir string, disks []string, cle
 	return res, nil
 }
 
+func (r *MirageCompiler) Usage() string {
+	return "TODO: usage for MirageCompiler"
+}
+
+func (r *MirageCompiler) Bootstrap(projectPath string) error {
+	return errors.New("not implemented", nil)
+}
+
 var parseRegEx = regexp.MustCompile(`vdev=(\S+),\s.+?target=@\S+?:(\S+?)@`)
 
 func getUnikernelFile(sourcesDir string) (string, error) {

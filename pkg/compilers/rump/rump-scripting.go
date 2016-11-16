@@ -78,6 +78,14 @@ func (r *RumpScriptCompiler) CompileRawImage(params types.CompileImageParams) (*
 	return r.CreateImage(resultFile, args, params.MntPoints, append(r.ScriptEnv, fmt.Sprintf("MAIN_FILE=%s", config.MainFile), fmt.Sprintf("BOOTSTRAP_TYPE=%s", r.BootstrapType)), params.NoCleanup)
 }
 
+func (r *RumpScriptCompiler) Usage() string {
+	return "TODO: usage for RumpScriptCompiler"
+}
+
+func (r *RumpScriptCompiler) Bootstrap(projectPath string) error {
+	return errors.New("not implemented", nil)
+}
+
 func NewRumpPythonCompiler(dockerImage string, createImage func(kernel, args string, mntPoints, bakedEnv []string, noCleanup bool) (*types.RawImage, error), bootStrapType string) *RumpScriptCompiler {
 	return &RumpScriptCompiler{
 		RumCompilerBase: RumCompilerBase{
